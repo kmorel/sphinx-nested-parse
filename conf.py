@@ -9,9 +9,8 @@
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#
-# import os
-# import sys
+import os
+import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
 
@@ -23,11 +22,14 @@ author = 'Kenneth Moreland'
 
 
 # -- General configuration ---------------------------------------------------
+# Locally defined extensions are placed in the _ext subdirectory.
+sys.path.append(os.path.abspath("./_ext"))
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'my_sphinx_extension',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
