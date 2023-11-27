@@ -10,6 +10,8 @@ Welcome to Sphinx Nested Parse Example's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   try-basic-extension.rst
+
 
 
 Indices and tables
